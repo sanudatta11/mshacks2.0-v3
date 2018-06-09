@@ -212,7 +212,7 @@ a:hover, a:active {
 --------------------------------*/
 .site-navigation {
     position: absolute;
-    top: -22px;
+    /* top: -22px; removed this for proper placement of nav-collapse button*/
     right: 15px;
     z-index: 9999;
     width: 100%;
