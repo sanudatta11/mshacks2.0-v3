@@ -1364,11 +1364,11 @@ ul.navbar-nav > li.header-ticket:hover > a:after{
 }
 
 .countdown > div.counter-hour:after{
-	background: #00a1f1;
+	background: #7cbb00;
 }
 
 .countdown > div.counter-minute:after{
-	 background: #7cbb00;
+	 background: #00a1f1;
 
 }
 
