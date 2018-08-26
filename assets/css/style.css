@@ -3465,3 +3465,85 @@ footer p a:hover {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+.timeline {
+    position: relative;
+    z-index: 0;
+}
+
+.timeline:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    width: 4px;
+    margin: 0 auto;
+    background-color: #1da1f2;
+    border-radius: 2px;
+}
+
+.timeline .nav > li {
+    position: relative;
+    width: 50%;
+    padding-right: 30px;
+    z-index: 0;
+}
+
+.timeline .nav > li:before {
+    content: " ";
+    position: absolute;
+    top: 30px;
+    right: -8px;
+    width: 15px;
+    height: 15px;
+    background-color: #1da1f2;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+.timeline .nav > li:after {
+    content: " ";
+    position: absolute;
+    top: 37px;
+    right: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #e5e5e5;
+    z-index: -1;
+}
+
+.timeline .nav > li:nth-child(even) {
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.timeline .nav > li:nth-child(even):before {
+    left: -8px;
+    right: auto;
+}
+
+.timeline .nav > li:nth-child(even):after {
+    left: 0;
+    right: auto;
+}
+
+.timeline .nav > li:nth-child(2) {
+    margin-top: 60px;
+}
+
+.timeline--item {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+.timeline--content {
+    padding: 14px 20px;
+}
+
+.timeline--footer {
+    padding: 4px 20px;
+}
